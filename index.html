@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clove Dental - India's Largest Dental Network</title>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                clove<span>:)</span> <div class="logo-sub">DENTAL</div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="nav-links">
+                <a href="#treatments">Treatments</a>
+                <a href="#why-us">Why Clove</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="nav-actions">
+                <a href="tel:1800123456" class="phone-link">
+                    <i data-lucide="phone" width="18"></i> 1800-123-456
+                </a>
+                <button class="btn btn-primary">Book Appointment</button>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <i data-lucide="menu" width="28" height="28"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#treatments">Treatments</a>
+            <a href="#why-us">Why Clove</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQs</a>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                <a href="tel:1800123456" class="phone-link" style="justify-content: center; margin-bottom: 1rem;">
+                    <i data-lucide="phone" width="18"></i> 1800-123-456
+                </a>
+                <button class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-blob"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">#1 Dental Network in India</span>
+                    <h1>Problem-Free<br><span style="color: var(--brand-orange)">Smiles</span> Start Here.</h1>
+                    <p>World-class dental care at affordable prices. Join 1 Million+ happy patients who trust Clove Dental for their oral health.</p>
+                    
+                    <div class="usp-grid">
+                        <div class="usp-item">
+                            <div class="usp-icon"><i data-lucide="shield-check" width="20"></i></div>
+                            <div>
+                                <h4>100% Sterile</h4>
+                                <p>Clinics</p>
+                            </div>
+                        </div>
+                        <div class="usp-item">
+                            <div class="usp-icon"><i data-lucide="users" width="20"></i></div>
+                            <div>
+                                <h4>1000+ Doctors</h4>
+                                <p>Specialists</p>
+                            </div>
+                        </div>
+                        <div class="usp-item">
+                            <div class="usp-icon"><i data-lucide="map-pin" width="20"></i></div>
+                            <div>
+                                <h4>450+ Clinics</h4>
+                                <p>Pan India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="form-card">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 0.5rem;">Get Expert Guidance</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Book your appointment today. It takes less than 30 seconds.</p>
+
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label class="form-label">Patient Name</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="user" class="input-icon"></i>
+                                <input type="text" class="form-input" placeholder="Enter full name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="smartphone" class="input-icon"></i>
+                                <input type="tel" class="form-input" placeholder="10-digit number" pattern="[0-9]{10}" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">City</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="map" class="input-icon"></i>
+                                <select class="form-input" style="appearance: none; cursor: pointer;">
+                                    <option value="">Select your city</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Pune">Pune</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="input-icon" style="left: auto; right: 1rem; width: 16px;"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="section" id="treatments">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Comprehensive Dental Solutions</h2>
+                    <p class="section-subtitle">From routine checkups to complex surgeries, we offer a wide range of treatments tailored to your needs.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Card 1 -->
+                    <div class="treatment-card">
+                        <div class="t-img-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2665/2665977.png" alt="RCT" style="width: 80px; opacity: 0.9;">
+                            <div class="t-price">From ₹4,500</div>
+                        </div>
+                        <div class="t-content">
+                            <h3 class="t-title">Root Canal Treatment</h3>
+                            <p class="t-desc">Save your infected tooth with our advanced, painless single-sitting root canal procedure.</p>
+                            <button class="btn btn-outline" style="width: 100%;">
+                                Book Appointment <i data-lucide="arrow-right" width="16"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="treatment-card">
+                        <div class="t-img-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/607/607388.png" alt="Implants" style="width: 80px; opacity: 0.9;">
+                            <div class="t-price">From ₹25,000</div>
+                        </div>
+                        <div class="t-content">
+                            <h3 class="t-title">Dental Implants</h3>
+                            <p class="t-desc">Permanent, natural-looking solution for missing teeth. Titanium implants with lifetime warranty.</p>
+                            <button class="btn btn-outline" style="width: 100%;">
+                                Book Appointment <i data-lucide="arrow-right" width="16"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="treatment-card">
+                        <div class="t-img-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/993/993339.png" alt="Braces" style="width: 80px; opacity: 0.9;">
+                            <div class="t-price">From ₹35,000</div>
+                        </div>
+                        <div class="t-content">
+                            <h3 class="t-title">Braces & Aligners</h3>
+                            <p class="t-desc">Straighten your teeth with invisible aligners or traditional ceramic braces. Expert Orthodontists.</p>
+                            <button class="btn btn-outline" style="width: 100%;">
+                                Book Appointment <i data-lucide="arrow-right" width="16"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section class="safety-section">
+            <div class="container">
+                <div class="safety-grid">
+                    <div class="safety-card">
+                        <div class="safety-icon"><i data-lucide="shield" width="24"></i></div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">10x Safety Protocols</h3>
+                        <p style="color: #9ca3af; font-size: 0.875rem;">We follow rigorous sterilization processes, air purification systems, and single-use kits.</p>
+                    </div>
+                    <div class="safety-card">
+                        <div class="safety-icon"><i data-lucide="microscope" width="24"></i></div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Advanced Technology</h3>
+                        <p style="color: #9ca3af; font-size: 0.875rem;">Equipped with OPG machines, laser dentistry, and intraoral cameras for precise diagnosis.</p>
+                    </div>
+                    <div class="safety-card">
+                        <div class="safety-icon"><i data-lucide="award" width="24"></i></div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Award Winning Care</h3>
+                        <p style="color: #9ca3af; font-size: 0.875rem;">Recognized as the "Best Dental Chain" by Times Health and Economic Times multiple years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section bg-gray" id="why-us">
+            <div class="container">
+                <div class="why-wrapper">
+                    <div class="why-content">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Why <span class="text-brand">Clove Dental</span> is the Right Choice for Your Family</h2>
+                        
+                        <div class="check-item">
+                            <div class="check-icon"><i data-lucide="check" width="18"></i></div>
+                            <div>
+                                <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Transparency in Pricing</h4>
+                                <p style="font-size: 0.875rem; color: var(--text-muted);">No hidden charges. We provide a clear cost estimate before starting any treatment.</p>
+                            </div>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-icon"><i data-lucide="check" width="18"></i></div>
+                            <div>
+                                <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Expert Team of Specialists</h4>
+                                <p style="font-size: 0.875rem; color: var(--text-muted);">Our team includes Endodontists, Orthodontists, Periodontists, and Oral Surgeons.</p>
+                            </div>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-icon"><i data-lucide="check" width="18"></i></div>
+                            <div>
+                                <h4 style="font-weight: 700; margin-bottom: 0.25rem;">Painless Dentistry</h4>
+                                <p style="font-size: 0.875rem; color: var(--text-muted);">We use the latest anaesthetic techniques to ensure your comfort during procedures.</p>
+                            </div>
+                        </div>
+
+                        <button class="btn" style="background: var(--brand-dark); color: white; margin-top: 1rem;">Read Our Story</button>
+                    </div>
+                    <div class="why-image">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Doctor" style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Real Smiles, Real Transformations</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                        </div>
+                        <p class="review-text">"The best dental experience I've ever had. Dr. Sharma explained everything clearly and the root canal was surprisingly painless."</p>
+                        <div class="reviewer">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="User">
+                            <div>
+                                <h5 style="font-weight: 700; font-size: 0.9rem;">Priya Malhotra</h5>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">New Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                        </div>
+                        <p class="review-text">"State-of-the-art clinic! I got my implants done here. The hygiene standards are top-notch, highly recommended."</p>
+                        <div class="reviewer">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="User">
+                            <div>
+                                <h5 style="font-weight: 700; font-size: 0.9rem;">Rahul Verma</h5>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="stars">
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                            <i data-lucide="star" width="16" fill="#fbbf24"></i>
+                        </div>
+                        <p class="review-text">"Very kid-friendly. My 7-year-old daughter was terrified of dentists, but the doctors here made her feel so comfortable."</p>
+                        <div class="reviewer">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="User">
+                            <div>
+                                <h5 style="font-weight: 700; font-size: 0.9rem;">Anita Desai</h5>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" style="background-color: var(--brand-light);" id="faq">
+            <div class="container faq-container">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>Do I need an appointment for a consultation?</span>
+                        <i data-lucide="chevron-down" width="20" class="chevron"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes, we recommend booking an appointment to avoid waiting time. However, we do accept walk-in patients based on doctor availability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>Are the clinics open on Sundays?</span>
+                        <i data-lucide="chevron-down" width="20" class="chevron"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes, most of our clinics are open on weekends, including Sundays. Please check the specific clinic timings while booking.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>What safety measures do you follow?</span>
+                        <i data-lucide="chevron-down" width="20" class="chevron"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>We follow a 10-step sterilization protocol, use disposable protective gear, and sanitize our clinics regularly to ensure 100% safety.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 1rem;">clove<span style="color: var(--brand-orange)">:)</span></a>
+                    <p style="color: #9ca3af; font-size: 0.875rem; line-height: 1.6;">India's largest dental network committed to providing world-class dental treatments with a focus on quality, hygiene, and patient care.</p>
+                    <div class="socials">
+                        <a href="#" class="social-link"><i data-lucide="facebook" width="16"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter" width="16"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram" width="16"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#treatments">Treatments</a></li>
+                        <li><a href="#">Our Doctors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Popular Treatments</h4>
+                    <ul>
+                        <li><a href="#">Root Canal</a></li>
+                        <li><a href="#">Dental Implants</a></li>
+                        <li><a href="#">Teeth Whitening</a></li>
+                        <li><a href="#">Kids Dentistry</a></li>
+                        <li><a href="#">Braces</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li style="display: flex; gap: 0.75rem; color: #9ca3af; font-size: 0.875rem;">
+                            <i data-lucide="map-pin" width="18" style="color: var(--brand-orange); flex-shrink: 0;"></i>
+                            Star Dental Centre Pvt Ltd, New Delhi, India 110029
+                        </li>
+                        <li style="display: flex; gap: 0.75rem; color: #9ca3af; font-size: 0.875rem;">
+                            <i data-lucide="phone" width="18" style="color: var(--brand-orange); flex-shrink: 0;"></i>
+                            1800-123-456
+                        </li>
+                        <li style="display: flex; gap: 0.75rem; color: #9ca3af; font-size: 0.875rem;">
+                            <i data-lucide="mail" width="18" style="color: var(--brand-orange); flex-shrink: 0;"></i>
+                            info@clovedental.in
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Clove Dental. All Rights Reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
